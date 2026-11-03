@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    grid-column: 1/ -1;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.5rem;
+    color: #000000;
+}
+
+nav {
+    margin: 0 auto 0;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #E6DAFF;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    font-weight: 700;
+    display: block;
+    color: #000000;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation a:hover {
+
+    border-bottom: 3px solid #240A7B;
+    text-shadow: 0 0 1px #000000;
+}
+
+#course-tittle {
+    background-color: #240A7B;
+    width: 100%;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: fit-content;
+    margin: 1rem auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 70px;
+    flex: 1;
+}
+
+.name {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+footer {
+    background-color: #240A7B;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+#about-me-h2 {
+    grid-column: 1/-1;
+}
+
+.card-title {
+    background-color: #E6DAFF;
+    text-align: center;
+
+}
+
+img {
+    padding: 15px 15px 15px 15px;
+}
+
+#intro {
+    grid-column: 1/2;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#py-desc {
+    grid-column: 2/3;
+    padding-left: 15px;
+}
+
+#paraguay-title {
+    grid-column: 1/-1;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+@media (max-width:768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    #intro,
+    #py-desc {
+        grid-column: 1 / -1;
+    }
+}

@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Julia Garcia"/>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Julia Mariel Garcia Maestre - Week 1 Home Page to test knowledge in HTML, CSS and JavaScript."/>
+    <meta name="author" content="Julia Garcia" />
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Julia Mariel Garcia Maestre - Week 1 Home Page to test knowledge in HTML, CSS and JavaScript." />
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
     <title>WDD131 - Dynamic Web Fundamentals - Julia Garcia</title>
 </head>
+
 <body>
     <header>
         <span id="course-tittle">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="https://www.linkedin.com/in/julia-garc%C3%ADa-923403168/">LinkdIn</a></li>
                 <li><a href="https://byupw.instructure.com/.">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/9?lang=eng&id=p8-p9#p8">Scripture</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/9?lang=eng&id=p8-p9#p8">Scripture</a>
+                </li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Julia M. Garcia</h1>
+        <h1 class="name">Julia M. Garcia</h1>
         <section class="card">
-            <h2>About me</h2>
-            <p>My name is Julia Garcia. I am from Asuncion, Paraguay. I am currently working as a Mentor servicing BYU-Pathway Worlwide students. I am trying to pursue a Bachelors Degree in Software Development and I hope to finish next year</p>
-            <img src="images/Julia-Garcia.jpg" alt="Julia Garcia Photo">
-            <h2>Asuncion, Paraguay</h2>
-            <p>Paraguay is know as the "heart of America" since is place in the center of South America. Has a tropical weather and is know for being the only country in South America that didn't exterminate but learn their culture. Because of this Paraguay has 2 official languages Spanish and Guarani. Is also the only country in the world that it flags has two different designs on each side</p>
-            <figure>
-                <img src="images/Paraguay-Flag.jpg" alt="Paraguay Flag">
-                <figcaption>Official Flag of Paraguay - Both Sides</figcaption>     
-            </figure>
+            <div id="about-me">
+                <h2 id="about-me-h2" class="card-title">About me</h2>
+                <p id="intro">My name is Julia Garcia. I am from Asuncion, Paraguay. I am currently working as a Mentor
+                    servicing
+                    BYU-Pathway Worlwide students. I am trying to pursue a Bachelors Degree in Software Development and
+                    I hope to finish next year</p>
+                <img src="images/Julia-Garcia.jpg" alt="Julia Garcia Photo">
+                <h2 id="paraguay-title">Asuncion, Paraguay</h2>
+                <p id="py-desc">Paraguay is know as the "heart of America" since is place in the center of South
+                    America. Has a
+                    tropical weather and is know for being the only country in South America that didn't exterminate but
+                    learn their culture. Because of this Paraguay has 2 official languages Spanish and Guarani. Is also
+                    the only country in the world that it flags has two different designs on each side</p>
+                <figure>
+                    <img src="images/Paraguay-Flag.jpg" alt="Paraguay Flag">
+                    <figcaption>Official Flag of Paraguay - Both Sides</figcaption>
+                </figure>
+            </div>
         </section>
-        <section>
-            <h2>
-                <ul>
-                    <li><a href="#">Dev.to Community</a></li>
-                    <li><a href="#">Smashing Mashing</a></li>
-                    <li><a href="#">Css Tricks</a></li>
-                    <li><a href="#">W3 Schools</a></li>
-                    <li><a href="#">Udemy</a></li>
-                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
-                </ul>
-            </h2>
+        <section class="card">
+            <h2 class="card-title">Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Mashing</a></li>
+                <li><a href="https://css-tricks.com/">Css Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear" ></span> Julia Garcia - Asuncion, Paraguay. </p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="currentyear"></span> Julia Garcia - Asuncion, Paraguay. </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
