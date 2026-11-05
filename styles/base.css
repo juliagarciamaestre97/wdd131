@@ -72,7 +72,7 @@ main {
     margin: 1rem auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 70px;
+    padding: 50px 50px;
     flex: 1;
 }
 
@@ -96,41 +96,39 @@ footer {
     overflow: hidden;
 }
 
-#about-me {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-}
-
-#about-me-h2 {
-    grid-column: 1/-1;
-}
-
 .card-title {
     background-color: #E6DAFF;
     text-align: center;
-
+    height: 70px;
+    width: 100%;
 }
+
+#about-me, #py-desc{
+    display: flex;
+}
+
 
 img {
     padding: 15px 15px 15px 15px;
 }
 
 #intro {
-    grid-column: 1/2;
     padding-left: 15px;
     padding-top: 15px;
 }
 
 #py-desc {
-    grid-column: 2/3;
     padding-left: 15px;
 }
 
 #paraguay-title {
-    grid-column: 1/-1;
     gap: 10px;
     padding-left: 15px;
+}
+
+.photo-Julia{
+    width: 2OOpx;
+    height: 240px;
 }
 
 @media (max-width:768px) {
@@ -138,16 +136,8 @@ img {
         grid-template-columns: 1fr;
     }
 
-    #about-me {
-        grid-template-columns: 1fr;
-    }
-
     .navigation {
         flex-direction: column;
     }
 
-    #intro,
-    #py-desc {
-        grid-column: 1 / -1;
-    }
 }
