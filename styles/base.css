@@ -139,7 +139,9 @@ img {
     height: 240px;
 }
 
-
+p{
+    font-size: 1.1rem;
+}
 @media (max-width:768px) {
     main {
         grid-template-columns: 1fr;
