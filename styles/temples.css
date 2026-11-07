@@ -1,0 +1,32 @@
+@media (max-width:768px) {
+    main {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .album {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    figure {
+    text-align: center;
+    }
+
+    figure img {
+    width: 100%;
+    height: auto;
+    }
+
+    footer {
+        background-color: #E6DAFF;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
