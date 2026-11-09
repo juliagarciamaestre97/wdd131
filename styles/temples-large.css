@@ -3,23 +3,57 @@ nav {
     margin: 0 auto 0;
 }
 
+header {
+    background-color: #E6DAFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+
+header h1{
+    padding-left: 15px;
+    margin: 0;
+    white-space: nowrap;
+}
+h1{
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    margin:0;
+    justify-self: end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 .navigation {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
     background-color: #E6DAFF;
+    justify-content: flex-end;
 }
 
 .navigation li {
-    flex: 1 1 auto;
+    flex: initial;
 }
 
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
 .navigation a {
     font-weight: 700;
     display: block;
     color: #000000;
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     text-align: center;
     border-bottom: 3px solid transparent;
@@ -47,7 +81,10 @@ figure img {
     width: 100%;
     height: auto;
     }
-
+figcaption, footer, nav {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
 footer {
     background-color: #E6DAFF;
     color: black;
