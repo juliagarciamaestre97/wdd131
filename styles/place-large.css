@@ -1,19 +1,66 @@
+:root {
+    --blue: #1C5D99;
+    --blue-footer: #0b3a65;
+    --light-blue: hsl(200, 63%, 80%);
+    --red: #C1292E;
+    --font: "Inter Tight", sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
 @media (min-width: 768px) {
+    main {
+            position: relative;
+        }
     .hero{
         width: 100%;
 
     }
     .hero-img{
         width: 80vw;
-        max-width: 1200px;
-        margin: 0 auto;
+        display: block;
     }
-    main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
-    }
+
     section{
         border-bottom: none;
+    }
+
+    .data,.weather {
+        position: absolute;
+        width: 300px;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    
+    .data {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .weather {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    h2{
+        background-color: var(--red);
+        text-align: left;
+        align-content: center;
+        padding: 10px 10px 10px 20px;
+        margin: 10px 40px 0 -15px;
+    }
+
+    
+    .weather h2:after{
+        content: "☁️";
+    }
+
+    .weather-title img{
+        display: none;
     }
 }
