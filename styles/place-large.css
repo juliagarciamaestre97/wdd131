@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    .hero{
+        width: 100%;
+
+    }
+    .hero-img{
+        width: 80vw;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    }
+    section{
+        border-bottom: none;
+    }
+}

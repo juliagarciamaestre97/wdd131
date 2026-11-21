@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Garcia" />
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Julia Mariel Garcia Maestre - Week 3 Paraguay Place Website to test knowledge in HTML, CSS and JavaScript." />
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>WDD131 - Dynamic Web Fundamentals - Julia Garcia</title>
+
+</head>
+<body>
+    <header>
+        <h1>Paraguay</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img class="hero" src="images/hero-small.webp" alt="Asuncion, Paraguay downtown city picture">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area: </strong>406,752 sq km</li>
+                <li><strong>Population: </strong>6,109,644</li>
+                <li><strong>Capital: </strong>Asunción</li>
+                <li><strong>Languages: </strong>Spanish, Guarani</li>
+                <li><strong>Currency: </strong>Guarani</li>
+                <li><strong>Time Zone: </strong>UTC-3</li>
+                <li><strong>Calling Code: </strong>+595</li>
+                <li><strong>Internet TLD: </strong>.py</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <div class="weather-title">
+                <img src="images/clouds.svg" alt="Clouds Icon">
+                <h2>Weather</h2>
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> 24°C</li>
+                <li><strong>Conditions:</strong> Cloudy</li>
+                <li><strong>Wind:</strong> 10km/h</li>
+                <li><strong>Wind Chill: </strong><span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Julia Garcia - Asuncion, Paraguay. </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
