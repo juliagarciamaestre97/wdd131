@@ -55,12 +55,11 @@
         margin: 10px 40px 0 -15px;
     }
 
-    
-    .weather h2:after{
-        content: "☁️";
+    .weather img{
+        display: none;
     }
 
-    .weather-title img{
-        display: none;
+    .weather h2:after {
+        content: "☁️";
     }
 }
