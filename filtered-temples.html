@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Garcia" />
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Julia Mariel Garcia Maestre - Week 4 Filtered Temples Collection page to test knowledge in HTML, CSS and JavaScript." />
+    <script src="scripts/filtered-temple.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <title>WDD131 - Dynamic Web Fundamentals - Julia Garcia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Mr+Dafoe&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <a href="#" id="menu" aria-label="Toggle navigation menu"></a>
+        <nav aria-label="Temple Filters">
+            <ul class="navigation">
+                <li><a href="#" id="home" data-filter="home">Home</a></li>
+                <li><a href="#" id="old" data-filter="old">Old</a></li>
+                <li><a href="#" id="new" data-filter="new">New</a></li>
+                <li><a href="#" id="large" data-filter="large">Large</a></li>
+                <li><a href="#" id="small" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="album" id="album">
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Julia Garcia - Asuncion, Paraguay. </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

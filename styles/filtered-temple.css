@@ -1,0 +1,141 @@
+.temple-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+.temple-card{
+    background-color: #eee7fc;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    main {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-family: "Mr Dafoe", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    header {
+        display: grid;
+        background-color: #E6DAFF;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    #menu {
+        grid-column: 2/3;
+        justify-self: end;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        background-color: #E6DAFF;
+        color: #000;
+        font-size: 1.5 rem;
+    }
+
+    header h1 {
+        grid-column: 1/2;
+        font-size: 2.2 rem;
+        margin: 0;
+        line-height: 1;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    .navigation li {
+        display: none
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+
+    nav {
+        margin: 0 auto 0;
+        justify-self: end;
+        grid-column: 1/3;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #E6DAFF;
+    }
+
+    .navigation a {
+        font-weight: 700;
+        display: block;
+        color: #000000;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+    }
+
+    .navigation a:hover {
+        border-bottom: 3px solid #240A7B;
+        text-shadow: 0 0 1px #000000;
+    }
+
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .album {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption,
+    footer,
+    nav {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+    }
+
+    footer {
+        background-color: #E6DAFF;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
